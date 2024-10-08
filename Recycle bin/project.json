@@ -1,0 +1,57 @@
+{
+  "name": "Recycle bin",
+  "projectId": "ac2b90f9-c412-4525-b43a-e077371664da",
+  "description": "Blank Template",
+  "main": "Main.xaml",
+  "dependencies": {
+    "UiPath.ComplexScenarios.Activities": "[1.5.0]",
+    "UiPath.Excel.Activities": "[2.23.3-preview]",
+    "UiPath.Mail.Activities": "[1.23.1]",
+    "UiPath.Presentations.Activities": "[1.13.0-preview]",
+    "UiPath.System.Activities": "[24.5.0-preview]",
+    "UiPath.UIAutomation.Activities": "[24.10.0-preview]",
+    "UiPath.Word.Activities": "[1.19.2-preview]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "24.10.0.0",
+  "projectVersion": "1.0.0",
+  "runtimeOptions": {
+    "exceptionHandlerWorkflow": "GlobalHandlerX.xaml",
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Business",
+    "outputType": "Process",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": []
+    },
+    "fileInfoCollection": [],
+    "saveToCloud": false
+  },
+  "expressionLanguage": "VisualBasic",
+  "isTemplate": true,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

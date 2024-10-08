@@ -1,0 +1,270 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1150,1841.3333333333333" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/cv" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:sd1="clr-namespace:System.Drawing;assembly=System.Drawing.Primitives" xmlns:uc="clr-namespace:UiPath.CV;assembly=UiPath.CV" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.SyncObjects</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Core.Activities.OCR.Engines</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="552,1776.6666666666667" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:String" Name="song" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:InputDialog Label="{x:Null}" Options="{x:Null}" OptionsString="{x:Null}" Result="{x:Null}" Title="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="510,278" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" />
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: (16) YouTube" sap:VirtualizedContainerService.HintSize="510,1434" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="8e3f5690-4a05-4869-bcb8-468f05442f8a" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,1192" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:CVScope ContinueOnError="{x:Null}" DelayBefore="{x:Null}" ScopeId="{x:Null}" ScrollOffset="{x:Null}" Server="{x:Null}" CvMethod="ElementDetection, OCR" DesignTimeCacheId="eb941d5a-3e97-475d-9362-d36deb58209c" DisplayName="CV Screen Scope 'YTD-SEARCHBOX  search'" sap:VirtualizedContainerService.HintSize="434,1127.3333333333333" sap2010:WorkflowViewState.IdRef="CVScope_1" SendOnPremData="False" Version="V6">
+              <p:CVScope.Body>
+                <ActivityAction x:TypeArguments="x:Object">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="x:Object" Name="CVSessionData" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                    <p:CvTypeIntoWithDescriptor DelayScreenshotAfterScroll="{x:Null}" DeselectAfter="{x:Null}" SendWindowMessages="{x:Null}" SimulateType="{x:Null}" Activate="True" ClickBeforeTyping="True" Descriptor="[&quot;Target: InputBox (33,0,544,40)&quot;]" DesignTimeCacheId="eb941d5a-3e97-475d-9362-d36deb58209c" DesignTimeScaleFactor="1.5" DisplayName="CV Type Into - InputBox" EmptyField="True" sap:VirtualizedContainerService.HintSize="400,221.33333333333334" sap2010:WorkflowViewState.IdRef="CvTypeIntoWithDescriptor_1" InformativeScreenshot="19f8312f1461169dc0340ce32a8001ac" NumberOfScrolls="2" ScrollDirection="None" Text="[song]" Version="V6">
+                      <p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="c1f23afb-e845-4c7c-b3ea-82c2d82c1928">
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="33, 0, 544, 40" ElementType="InputBox" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvTypeIntoWithDescriptor.DesignTimeDescriptor>
+                      <p:CvTypeIntoWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="a1fa8d64-65e7-4dfd-8744-32d065c51e10">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvTypeIntoWithDescriptor.Target>
+                    </p:CvTypeIntoWithDescriptor>
+                    <p:CvClickWithDescriptor DelayBefore="{x:Null}" DelayMS="{x:Null}" DelayScreenshotAfterScroll="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" Descriptor="[&quot;Target: Icon (591,8,25,26)&quot;]" DesignTimeCacheId="eb941d5a-3e97-475d-9362-d36deb58209c" DesignTimeScaleFactor="1.5" DisplayName="CV Click - Icon" sap:VirtualizedContainerService.HintSize="400,220.66666666666666" sap2010:WorkflowViewState.IdRef="CvClickWithDescriptor_1" InformativeScreenshot="bf79b31ea666632c08f6760f81925e1f" KeyModifiers="None" MouseButton="BTN_LEFT" NumberOfScrolls="2" ScrollDirection="None" Version="V6">
+                      <p:CvClickWithDescriptor.CursorPosition>
+                        <ui:CursorPosition Position="Center">
+                          <ui:CursorPosition.OffsetX>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetX>
+                          <ui:CursorPosition.OffsetY>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:CursorPosition.OffsetY>
+                        </ui:CursorPosition>
+                      </p:CvClickWithDescriptor.CursorPosition>
+                      <p:CvClickWithDescriptor.DesignTimeDescriptor>
+                        <uc:CvDescriptor Id="69e999f4-a76f-489c-8281-27f0b949a510">
+                          <uc:CvDescriptor.Target>
+                            <uc:CvElementDescriptor CellExtraInfo="{x:Null}" DesignTimeArea="591, 8, 25, 26" ElementType="Icon" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACUAAAAnCAYAAACIVoEIAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMuSURBVFhH7ZdLS3JRFIa/f2ARIVJBUTZoGEJEUBEYRAUVNSjpFzSychIkSE2aJEHRoIsZUYMGTZqJZReii92m4aAL5IWggiBnK94FBw5+6+j2OKiBg4eTvmsvH0+Hvbb/0uk0/TWKUqoUpVQpSOrz85POz89pZ2eH5ubmaHl5mXZ3d+n6+lqsV8WU1PHxMY2OjpLFYjGksbGRZmZm6Pn5WeyRjbykHh4eyOl08oe2t7eTx+OhjY0Nury8pPf3d7q4uODXk5OT1NraynW1tbV0enoq9jNCWSoYDFJFRQVVVVVRIBAQazJZWVnhNZBbW1sTaySUpLa3t7nxwMAAPT4+ijVGoL63t5fX7+3tiTWZ5JS6vb2l8vJy6urqEnNVuru7yWq10tXVlZjrySnV1tZGlZWV9PT0JOaq4I7ZbDZqbm4Wcz1ZpQ4ODvi2b25uinm+rK+vc79wOCzmGlml+vr6qLq6WszMgrve398vZhqGUi8vL/ythoeHxdwsQ0ND3Pfj40PMgaGU9q+bn58Xc7Ng50dfTAIpB4ZS2GOwON+NLxeHh4fcF8+XlANDqaWlJV6MnVrKzZJKpbjv4uKimANDKQxWLI5Go2JuFuxT6IshLuXAUApDF4tVR4oq2rYQCoXEHBhKJRIJXjwxMSHmZhkfH+e+8XhczIGhFHC5XNTZ2SlmZuno6OAZKmUaWaX29/eptLSUzs7OxDxfjo6OqKSkhLa2tsRcI6vU9/c336mGhgb+d0o1qry+vpLdbieHw0FfX19ijUZWKRCLxXi6Dw4OirkqPT09VFZWRjc3N2KuJ6cUWF1d5YcTz0K+pwWcDjDrsB6zVKrJREkK4OSJxjh54m+pJhPUoV77QrhOT0+LtXqUpUAkEqH6+npujuvIyAj5/X46OTmht7c3vuI1hnhdXR3XtbS00P39Pa+fmpri93DN7K0nLykNnK+ampr4A4zAMyTNN6/Xyzl+dGRmGqakNO7u7mhhYYF/SoHZ2Vk+z+PYI9Vr+Hw+FnO73WJekFQh4EgEsbGxMd569NmvSQGI1dTU8Lajf/9XpUAymfzvvV+XkihKqVKUUuUPSqXpB5ZztIOAxwVYAAAAAElFTkSuQmCC" />
+                          </uc:CvDescriptor.Target>
+                        </uc:CvDescriptor>
+                      </p:CvClickWithDescriptor.DesignTimeDescriptor>
+                      <p:CvClickWithDescriptor.Target>
+                        <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="2899c031-d196-47c4-b4f0-e3aad0951519">
+                          <ui:Target.TimeoutMS>
+                            <InArgument x:TypeArguments="x:Int32" />
+                          </ui:Target.TimeoutMS>
+                          <ui:Target.WaitForReady>
+                            <InArgument x:TypeArguments="ui:WaitForReady" />
+                          </ui:Target.WaitForReady>
+                        </ui:Target>
+                      </p:CvClickWithDescriptor.Target>
+                    </p:CvClickWithDescriptor>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click '1:08 1:08'" sap:VirtualizedContainerService.HintSize="400,229.33333333333334" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="8e3f5690-4a05-4869-bcb8-468f05442f8a" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.youtube.com/results?search_query=doraemon+song" DesignTimeRectangle="155, 387, 1715, 421" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='dismissible' parentid='contents' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dismissible' parentid='contents' tag='DIV' type='' class='style-scope ytd-video-renderer' aaname='       ' check:innerText='1:08&amp;#xD;&amp;#xA;Now playing&amp;#xD;&amp;#xA;doraemon opening song HD&amp;#xD;&amp;#xA;8.7M views&amp;#xD;&amp;#xA;8 years ago&amp;#xD;&amp;#xA;Pratiush KC&amp;#xD;&amp;#xA;0:35 ... Ya helicopter' /&gt;" Guid="5c4f262b-cb2b-49ac-ba3c-ac2814677ada" InformativeScreenshot="f040c55aa512b172b0e29a989950761a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(16) doraemon song - YouTube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                      <uix:NClick.VerifyOptions>
+                        <uix:VerifyExecutionOptions DisplayName="Element '1:08 1:08'" Mode="Appears">
+                          <uix:VerifyExecutionOptions.Retry>
+                            <InArgument x:TypeArguments="x:Boolean" />
+                          </uix:VerifyExecutionOptions.Retry>
+                          <uix:VerifyExecutionOptions.Target>
+                            <uix:TargetAnchorable BrowserURL="https://www.youtube.com/results?search_query=doraemon+song" DesignTimeRectangle="155, 387, 1715, 421" DesignTimeScaleFactor="1.5" FullSelectorArgument="&lt;webctrl id='dismissible' parentid='contents' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='dismissible' parentid='contents' tag='DIV' type='' class='style-scope ytd-video-renderer' aaname='       ' check:innerText='1:08&amp;#xD;&amp;#xA;Now playing&amp;#xD;&amp;#xA;doraemon opening song HD&amp;#xD;&amp;#xA;8.7M views&amp;#xD;&amp;#xA;8 years ago&amp;#xD;&amp;#xA;Pratiush KC&amp;#xD;&amp;#xA;0:35 ... Ya helicopter' /&gt;" Guid="03860db4-b679-43cf-a4a6-d9cad583d9ff" InformativeScreenshot="d891d926a60f24886bd2017a4d25b82d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='(16) doraemon song - YouTube' /&gt;" SearchSteps="FuzzySelector" Version="V4" Visibility="Interactive">
+                              <uix:TargetAnchorable.PointOffset>
+                                <uix:PointOffset Position="TopLeft" X="439" Y="90" />
+                              </uix:TargetAnchorable.PointOffset>
+                            </uix:TargetAnchorable>
+                          </uix:VerifyExecutionOptions.Target>
+                          <uix:VerifyExecutionOptions.Timeout>
+                            <InArgument x:TypeArguments="x:Double" />
+                          </uix:VerifyExecutionOptions.Timeout>
+                        </uix:VerifyExecutionOptions>
+                      </uix:NClick.VerifyOptions>
+                    </uix:NClick>
+                    <Delay Duration="00:00:10" sap:VirtualizedContainerService.HintSize="400,114.66666666666667" sap2010:WorkflowViewState.IdRef="Delay_1" />
+                  </Sequence>
+                </ActivityAction>
+              </p:CVScope.Body>
+              <p:CVScope.DesignTimeCacheContainer>
+                <uc:CvCacheContainer>
+                  <uc:CvCacheContainer.Caches>
+                    <scg:List x:TypeArguments="uc:CVCache" Capacity="1">
+                      <uc:CVCache DataSent="False" DisplayName="Screen CV Type Into - InputBox (Main)" Id="eb941d5a-3e97-475d-9362-d36deb58209c" InformativeScreenshot="2da77a28fe8c50d80229ca9b564c2875" LogicalPosition="417, 220" OcrText="Search" Position="417, 220" ScaleFactor="1.5" ScreenshotGuid="92a751f8-5ee1-4be7-a493-49abec5eb3c4" ServerVersion="24.1.2.2">
+                        <uc:CVCache.CvAnchorRelations>
+                          <scg:List x:TypeArguments="uc:AnchorRelationInfo" Capacity="4">
+                            <uc:AnchorRelationInfo IsTargetText="False" Target="0">
+                              <uc:AnchorRelationInfo.Anchors>
+                                <x:Array Type="x:Int32">
+                                  <x:Int32>0</x:Int32>
+                                </x:Array>
+                              </uc:AnchorRelationInfo.Anchors>
+                            </uc:AnchorRelationInfo>
+                          </scg:List>
+                        </uc:CVCache.CvAnchorRelations>
+                        <uc:CVCache.CvUiElements>
+                          <scg:List x:TypeArguments="uc:CvElementInfo" Capacity="8">
+                            <uc:CvElementInfo Category="InputBox" Region="33, 0, 544, 40" />
+                            <uc:CvElementInfo Category="Icon" Region="591, 8, 25, 26" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="570, 0, 66, 40" />
+                            <uc:CvElementInfo Category="Button" Confidence="Runtime" Region="592, 8, 24, 25" />
+                            <uc:CvElementInfo Category="Cell" Confidence="Runtime" Region="571, 0, 64, 37" />
+                          </scg:List>
+                        </uc:CVCache.CvUiElements>
+                        <uc:CVCache.OcrTexts>
+                          <scg:List x:TypeArguments="uc:OcrTextInfo" Capacity="1">
+                            <uc:OcrTextInfo Region="51, 12, 50, 14" Text="Search" />
+                          </scg:List>
+                        </uc:CVCache.OcrTexts>
+                      </uc:CVCache>
+                    </scg:List>
+                  </uc:CvCacheContainer.Caches>
+                </uc:CvCacheContainer>
+              </p:CVScope.DesignTimeCacheContainer>
+              <p:CVScope.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, scg:IEnumerable(scg:KeyValuePair(sd1:Rectangle, x:String))">
+                  <ActivityFunc.Argument>
+                    <DelegateInArgument x:TypeArguments="sd:Image" Name="Image" />
+                  </ActivityFunc.Argument>
+                  <p1:UiPathScreenOCR ApiKey="{x:Null}" Endpoint="{x:Null}" Output="{x:Null}" PredictionId="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ComputeSkewAngle="False" DisplayName="UiPath Screen OCR" ExtractWords="True" sap:VirtualizedContainerService.HintSize="200,25.333333333333332" sap2010:WorkflowViewState.IdRef="UiPathScreenOCR_2" Image="[Image]" Language="auto" NoopExecution="False" Profile="Screen" Scale="1" Timeout="100000" />
+                </ActivityFunc>
+              </p:CVScope.OCREngine>
+              <p:CVScope.Target>
+                <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="d76a3393-5178-4c93-82b8-8e977c83ee89" InformativeScreenshot="6ebc3c8188a9049121b1afd6628f3835" Selector="&lt;webctrl id='search' tag='YTD-SEARCHBOX' /&gt;" WaitForReady="INTERACTIVE">
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                </ui:Target>
+              </p:CVScope.Target>
+              <p:CVScope.UseLocalServer>
+                <InArgument x:TypeArguments="x:Boolean" />
+              </p:CVScope.UseLocalServer>
+            </p:CVScope>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-11, -11, 1942, 1042" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAZdEVYdFNvZnR3YXJlAEFkb2JlIEltYWdlUmVhZHlxyWU8AAACp0lEQVRYR8XXz0tUURQH8K8/8hZiYfmDmqgLuQhrE+1diLRxldAfEIQQBBJIIkHQKqpFG0FIEVsFQlGJRokEgqFgmo7m2GCvH8yEjDkkIaLl6XsfDoGc12g4rwufWZxz7j2H92OYgYj8V2owTGowTGowTFhdXfWt0Dda2JTe9J3kjzwq+It88mvXKXPGEmXOTdEPyvSFtRYROk6XrD3Tae3lfmvvxqztnrf26WdrBzesHRZr39AkzdI7hYtP0ziNrlg7xP0v6XHU2q4+a+/w7CtN1tactjbvMPu53v46CBQ/Abo3gF/+XcmxceDVSeCY37wQyBtgc60wl2LAUAlQhHPAWQZ+bi0Iw3mgFjeBJi0ZhnvAdTwE2rVkGHqBB3gNPNOSgcrLRVpbRUpL9fwOsPcA4sCwlgzkBlhfF4nHRRoa9Jpt+gSMg09jVEsGKisTSaX4Jba5enpEqqr02iySwJwbYE5LBto6gFvptEhzs0hRkb4nQAL4whEQ05KBtAEya2JCpL5e36f4CiTxYTeuQGa5K9HYqO9TLLgBduUWuNXRIRKJ6HsC8BYk3AAzWjLQ1gHGxkTq6vTaLDjAPN4DI1oykBtgbU1keVmkpUXEGL1uG/gWTGEM6NeSgSorRbq6RKqr9fwOsPcQeoBOLRkoP1+P/4NBsP1t4JqWDEM7cAsNQI2WDEMj2L4Y2DMJvNAKcolfQjNHAf4m4ToFRKb5QGiFucDXb7rWb8tljHEfqDCm8KoxFx4Z0zZiTF/CmJGkMbOLxnzkq5akFKVpOYslcrVJt9edwbNGeebzXmPu3zDm4gljSlxPv7fneb44vaUpilGCkp5XsOh5+8TzDtAhqqQjWVSQq93PvXvdGe4sd2aUXI85yvTlNdH/MIRFDYZJDYZJDYZH8BtrTS5QuubtDwAAAABJRU5ErkJggg==" InformativeScreenshot="89e2209662d54ecb556a8fa1dfb67ec0.jpg" Selector="&lt;html app='chrome.exe' title='(16) YouTube' /&gt;" Title="(16) YouTube" Url="https://www.youtube.com/" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
